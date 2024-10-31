@@ -1,5 +1,7 @@
 
--- 1
+-- This file creates tables and populates the tables from the csv files.:
+    
+-- 1 Customer Table
 CREATE TABLE Customer (
     panID character(10) PRIMARY KEY,
     first text,
@@ -14,7 +16,7 @@ FROM 'D:/study zone/prep_job/projects/Credit_Card_Fraud/project/CSVs & Scripts/C
 DELIMITER ','
 CSV HEADER;
 
--- 2
+-- 2 CC Table
 CREATE TABLE CC (
     cc_num text PRIMARY KEY,
     panID character(10),
@@ -26,7 +28,7 @@ FROM 'D:/study zone/prep_job/projects/Credit_Card_Fraud/project/CSVs & Scripts/C
 DELIMITER ','
 CSV HEADER;
 
--- 3
+-- 3 Category Table
 CREATE TABLE Category (
     category_id character(10) PRIMARY KEY,
     category_name text
@@ -37,7 +39,7 @@ FROM 'D:\study zone\prep_job\projects\Credit_Card_Fraud\project\CSVs & Scripts\C
 DELIMITER ','
 CSV HEADER;
 
--- 4
+-- 4 Merchant Table
 CREATE TABLE Merchant (
     merchant_id character(10) PRIMARY KEY,
     merchant_name text
@@ -48,7 +50,7 @@ FROM 'D:\study zone\prep_job\projects\Credit_Card_Fraud\project\CSVs & Scripts\M
 DELIMITER ','
 CSV HEADER;
 
---5
+--5 Merchant_Category Table
 CREATE TABLE Merchant_Category (
     id integer PRIMARY KEY,
     category_id character(10),
@@ -60,7 +62,7 @@ FROM 'D:/study zone/prep_job/projects/Credit_Card_Fraud/project/CSVs & Scripts/M
 DELIMITER ','
 CSV HEADER;
 
---6
+--6 Transactions Tabale
 CREATE TABLE Transactions (
     trans_num character(32) PRIMARY KEY,
     cc_num text,
