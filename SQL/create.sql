@@ -1,5 +1,5 @@
 
--- This file creates tables and populates the tables from the csv files.:
+-- This file creates tables and populates the tables from the csv files :
     
 -- 1 Customer Table
 CREATE TABLE Customer (
