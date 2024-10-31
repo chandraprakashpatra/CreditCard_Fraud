@@ -55,6 +55,7 @@ for index , row in origin.iterrows():
             'first':first,
             'last':last,
             'gender':gender,
+            'job':job,
             'dob':dob
         })
     else:#then what is the current panID of the person :
